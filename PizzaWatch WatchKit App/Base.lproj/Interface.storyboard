@@ -1,16 +1,412 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--IdentificadorValor-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="IdentificadorValor" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzaWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" text="Bienvenidos a Pizza de Reloj" numberOfLines="2" id="e4X-xT-Z6J"/>
+                        <separator alignment="left" id="TTu-P6-ilK"/>
+                        <button width="1" alignment="left" title="Comenzar" id="I73-Oo-Q6w">
+                            <connections>
+                                <segue destination="gip-BQ-9FN" kind="push" id="Oxn-rA-XfU"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Vista Tamano-->
+        <scene sceneID="UeV-uc-TlP">
+            <objects>
+                <controller id="gip-BQ-9FN" customClass="VistaTamano" customModule="PizzaWatch">
+                    <items>
+                        <label alignment="left" text="Elige Tu Tamaño" id="XyP-vy-Ynz"/>
+                        <separator alignment="left" id="okF-jm-fYx"/>
+                        <button width="1" alignment="left" title="Pequeña" id="DIU-FG-Udd">
+                            <connections>
+                                <action selector="Peq" destination="gip-BQ-9FN" id="p4K-us-u28"/>
+                                <segue destination="bsP-vv-M4r" kind="push" id="3nz-SD-bvM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Mediana" id="8HL-oB-yIA">
+                            <connections>
+                                <action selector="med" destination="gip-BQ-9FN" id="YMO-cB-t6e"/>
+                                <segue destination="bsP-vv-M4r" kind="push" id="z1j-Eq-lww"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Grande" id="v1J-dy-cMp">
+                            <connections>
+                                <action selector="Grande" destination="gip-BQ-9FN" id="Bda-40-zaN"/>
+                                <segue destination="bsP-vv-M4r" kind="push" id="Bz9-iM-JuW"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="-72"/>
+        </scene>
+        <!--Vista Masa-->
+        <scene sceneID="55a-Uv-Nw3">
+            <objects>
+                <controller id="bsP-vv-M4r" customClass="VistaMasa" customModule="PizzaWatch">
+                    <items>
+                        <label alignment="left" text="Elige La Masa" id="dpN-iv-gUf"/>
+                        <separator alignment="left" id="FIq-lH-hoq"/>
+                        <button width="1" alignment="left" title="Delgada" id="mCn-ED-Utb">
+                            <connections>
+                                <action selector="Del" destination="bsP-vv-M4r" id="PZw-eU-YzA"/>
+                                <segue destination="UQe-lp-6JR" kind="push" id="jTP-lf-ic0"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Crujiente" id="Aba-0E-ygZ">
+                            <connections>
+                                <action selector="cruj" destination="bsP-vv-M4r" id="Obg-5D-SPf"/>
+                                <segue destination="UQe-lp-6JR" kind="push" id="Vmt-Ot-q8e"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Gruesa" id="jks-9K-fwY">
+                            <connections>
+                                <action selector="gru" destination="bsP-vv-M4r" id="9Sz-Hn-Ekw"/>
+                                <segue destination="UQe-lp-6JR" kind="push" id="cGs-DC-Xpz"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="612" y="-177"/>
+        </scene>
+        <!--Vista Queso-->
+        <scene sceneID="hem-ci-l4H">
+            <objects>
+                <controller id="UQe-lp-6JR" customClass="VistaQueso" customModule="PizzaWatch">
+                    <items>
+                        <label alignment="left" text="Elige El Queso" id="KiZ-Ac-5pY"/>
+                        <separator alignment="left" id="jyS-cc-vjO"/>
+                        <button width="1" alignment="left" title="Mozarella" id="oit-5J-R8G">
+                            <connections>
+                                <action selector="moz" destination="UQe-lp-6JR" id="oSZ-fq-09g"/>
+                                <segue destination="bhF-NH-Fbh" kind="push" id="A0U-kh-Yso"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cheddar" id="z2x-JB-eYD">
+                            <connections>
+                                <action selector="Ched" destination="UQe-lp-6JR" id="kXl-CW-T4X"/>
+                                <segue destination="bhF-NH-Fbh" kind="push" id="XTW-LD-xvN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Parmesano" id="obg-mu-7OW">
+                            <connections>
+                                <action selector="par" destination="UQe-lp-6JR" id="MUg-WZ-VFv"/>
+                                <segue destination="bhF-NH-Fbh" kind="push" id="Fl1-fP-SdP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sin Queso" id="7FV-sf-Lic">
+                            <connections>
+                                <action selector="sin" destination="UQe-lp-6JR" id="XSK-ha-Dd2"/>
+                                <segue destination="bhF-NH-Fbh" kind="push" id="0zT-UB-AHu"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="882" y="-226"/>
+        </scene>
+        <!--Vista Ingre-->
+        <scene sceneID="Ech-Ms-rth">
+            <objects>
+                <controller id="bhF-NH-Fbh" customClass="VistaIngre" customModule="PizzaWatch">
+                    <items>
+                        <group width="1" alignment="left" id="5rb-uM-XGV">
+                            <items>
+                                <label alignment="left" text="Elige Ingredientes" minimumScaleFactor="0.90000000000000002" id="GCc-KI-Xj1"/>
+                                <label alignment="left" text="Label" id="yzg-6G-s0Q"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="mi6-zY-rrL"/>
+                        <group width="1" alignment="left" id="wSx-yV-nD0">
+                            <items>
+                                <button width="82" alignment="left" title="Jamon" id="IYg-K9-n8c">
+                                    <connections>
+                                        <action selector="jj" destination="bhF-NH-Fbh" id="Pmc-2c-vdo"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="No" id="bv7-3S-ukq"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="fr8-8C-4Zj">
+                            <items>
+                                <button width="81" alignment="left" title="Pepperoni" id="b2W-8h-qad">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="pp" destination="bhF-NH-Fbh" id="1IJ-66-XiD"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="No" id="fRc-UU-wAc"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="xR7-4p-gwa">
+                            <items>
+                                <button width="81" alignment="left" title="Pavo" id="pRF-Hj-gmh">
+                                    <connections>
+                                        <action selector="pv" destination="bhF-NH-Fbh" id="sxr-zk-Vmb"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="No" id="M5O-XP-fg2"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="mcC-md-eg1">
+                            <items>
+                                <button width="83" alignment="left" title="Nuez" id="1yX-Dx-9GD">
+                                    <connections>
+                                        <action selector="nz" destination="bhF-NH-Fbh" id="jMk-Ze-YWx"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="No" id="IDv-I6-Lol"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="9cl-KC-Cbq">
+                            <items>
+                                <button width="82" alignment="left" title="Piña" id="f5A-LS-Keh">
+                                    <connections>
+                                        <action selector="pn" destination="bhF-NH-Fbh" id="MBB-aL-0Jy"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="No" id="Vsb-bJ-gAH"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="gTb-kM-uBE"/>
+                        <label alignment="left" text="Label" id="a8L-m4-rK2"/>
+                        <separator alignment="left" id="4eK-sb-5UZ"/>
+                        <group width="136" alignment="left" id="c9J-8b-KfT">
+                            <items>
+                                <button width="136" alignment="left" title="Continuar" id="8pY-xV-fU0">
+                                    <connections>
+                                        <segue destination="kZC-F7-JO8" kind="push" id="acb-PH-R0Q"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cont" destination="a8L-m4-rK2" id="ifn-WR-9jy"/>
+                        <outlet property="jamonl" destination="bv7-3S-ukq" id="ckX-TQ-z09"/>
+                        <outlet property="nuezl" destination="IDv-I6-Lol" id="5cu-wJ-8y9"/>
+                        <outlet property="pavol" destination="M5O-XP-fg2" id="LDk-65-UPr"/>
+                        <outlet property="pepl" destination="fRc-UU-wAc" id="l2y-tF-j7U"/>
+                        <outlet property="pinal" destination="Vsb-bJ-gAH" id="L3v-zb-Ve6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1097" y="37"/>
+        </scene>
+        <!--Vista Rest-->
+        <scene sceneID="B0t-D1-VvC">
+            <objects>
+                <controller id="kZC-F7-JO8" customClass="VistaRest" customModule="PizzaWatch">
+                    <items>
+                        <label alignment="left" text="Elige Restaurante" id="IsS-HY-51D"/>
+                        <separator alignment="left" id="SE3-kf-7eE"/>
+                        <button width="1" alignment="left" title="Papa Johns" id="cnj-Ne-jf1">
+                            <connections>
+                                <action selector="john" destination="kZC-F7-JO8" id="nZk-L8-zL3"/>
+                                <segue destination="i0M-g6-yaK" kind="push" id="Gmx-3f-iaS"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pizza Hut" id="oAz-vE-9u7">
+                            <connections>
+                                <action selector="hut" destination="kZC-F7-JO8" id="YfT-rW-Taq"/>
+                                <segue destination="i0M-g6-yaK" kind="push" id="rPq-k8-wey"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pizza Metro" id="bw9-Ok-Jln">
+                            <connections>
+                                <action selector="metro" destination="kZC-F7-JO8" id="QIX-Kr-gnr"/>
+                                <segue destination="i0M-g6-yaK" kind="push" id="4fl-1o-IzR"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1366" y="185"/>
+        </scene>
+        <!--Vista Rapidez-->
+        <scene sceneID="oUx-nt-Vzf">
+            <objects>
+                <controller id="i0M-g6-yaK" customClass="VistaRapidez" customModule="PizzaWatch">
+                    <items>
+                        <label width="136" alignment="left" text="Rapidez de Entrega" textAlignment="center" numberOfLines="2" id="M1q-wB-F7g"/>
+                        <separator alignment="left" id="jGX-JA-iR5"/>
+                        <button width="1" alignment="left" title="Rapida" id="XMO-Nm-mAo">
+                            <connections>
+                                <action selector="rapi" destination="i0M-g6-yaK" id="WC5-01-uXI"/>
+                                <segue destination="D3U-gt-Tuy" kind="push" id="GyZ-J4-B5G"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Normal" id="SH8-WK-ZH5">
+                            <connections>
+                                <action selector="nor" destination="i0M-g6-yaK" id="EQr-D3-fze"/>
+                                <segue destination="D3U-gt-Tuy" kind="push" id="E9d-sd-ptD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Lenta" id="rra-bN-XzR">
+                            <connections>
+                                <segue destination="D3U-gt-Tuy" kind="push" id="M5O-c9-Rvn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lent" destination="rra-bN-XzR" id="LHp-vs-5Ob"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1171" y="429"/>
+        </scene>
+        <!--Vista Gracias-->
+        <scene sceneID="xdk-wE-bOV">
+            <objects>
+                <controller id="P0d-Ew-SyE" customClass="VistaGracias" customModule="PizzaWatch">
+                    <items>
+                        <label width="136" height="45" alignment="left" text="Gracias por usar Pizza de Reloj!" textAlignment="center" numberOfLines="2" id="sxj-mc-Nh9"/>
+                        <label width="130" alignment="left" text="Pronto llegará una carga deliciosa a tu casa" textAlignment="center" numberOfLines="6" id="4vK-4i-yAK">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="siiis" destination="4vK-4i-yAK" id="Rxr-Nl-jlW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1089" y="826"/>
+        </scene>
+        <!--Vista Conf-->
+        <scene sceneID="O8A-n8-iVl">
+            <objects>
+                <controller id="D3U-gt-Tuy" customClass="VistaConf" customModule="PizzaWatch">
+                    <items>
+                        <label alignment="left" text="Confirmacion" id="QQU-bY-773"/>
+                        <separator alignment="left" id="p9O-tb-iUT"/>
+                        <group width="1" alignment="left" id="7hH-EE-vSJ">
+                            <items>
+                                <label alignment="left" text="Tam." id="4rj-NV-Dak"/>
+                                <separator alignment="left" id="kUr-Cd-D2l"/>
+                                <label alignment="left" text="No Selec." id="GoI-I0-Uc9"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="ClO-tc-QkS"/>
+                        <group width="1" alignment="left" id="RgK-Dy-CD7">
+                            <items>
+                                <label alignment="left" text="Masa" id="CgR-rX-ywk"/>
+                                <separator alignment="left" id="GkJ-XA-t7z"/>
+                                <label alignment="left" text="No Selec." id="W8H-0O-Vpq"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="S0d-Sf-bEn"/>
+                        <group width="1" alignment="left" id="mxS-gv-Yv2">
+                            <items>
+                                <label alignment="left" text="Queso" id="B6d-r8-t6D"/>
+                                <separator alignment="left" id="fzH-VJ-dvA"/>
+                                <label alignment="left" text="No Selec." id="R06-jP-ueG"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="706-tK-Flb"/>
+                        <group width="1" alignment="left" id="bMX-s8-HZU">
+                            <items>
+                                <label alignment="left" text="Rest." id="2ak-cm-PoC"/>
+                                <separator alignment="left" id="BXV-4K-Cne"/>
+                                <label alignment="left" text="No Selec." id="XPc-Pq-n5I"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="tR0-3r-XW8"/>
+                        <group width="1" alignment="left" id="v6N-Nm-Xdt">
+                            <items>
+                                <label alignment="left" text="Ingredientes" id="HLm-g3-qxO"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="v1Q-pr-p7H"/>
+                        <table alignment="left" id="qlZ-K5-ouo"/>
+                        <group width="1" height="20" alignment="left" id="79h-eS-Yv0">
+                            <items>
+                                <label alignment="left" text="Jamon" id="meP-Mj-4Ld"/>
+                                <separator alignment="left" id="Lxl-QY-HjE"/>
+                                <label alignment="left" text="Label" id="pGb-Dg-hD8"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="j7l-9W-IxS">
+                            <items>
+                                <label alignment="left" text="Pepperoni" id="Xpe-Cp-mlc"/>
+                                <separator alignment="left" id="COd-pA-50i"/>
+                                <label alignment="left" text="Label" id="Uaa-iZ-G9u"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="3rA-PR-uXG">
+                            <items>
+                                <label alignment="left" text="Pavo" id="LSG-cO-wxh"/>
+                                <separator alignment="left" id="6Od-O3-qvE"/>
+                                <label alignment="left" text="Label" id="pL9-3T-IpG"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="wzz-da-vsK">
+                            <items>
+                                <label alignment="left" text="Nuez" id="t82-Cs-hRW"/>
+                                <separator alignment="left" id="cnb-PX-ppS"/>
+                                <label alignment="left" text="Label" id="Wwt-VH-4CX"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="dqD-JH-3J9">
+                            <items>
+                                <label alignment="left" text="Piña" id="F7f-uV-71Q"/>
+                                <separator alignment="left" id="Rva-OD-5MI"/>
+                                <label alignment="left" text="Label" id="6pN-fp-Pd2"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="Eyd-xg-gkM"/>
+                        <group width="1" alignment="left" id="jF3-KX-IYe">
+                            <items>
+                                <label alignment="left" text="Rapidez:" id="Jnc-96-aGQ"/>
+                                <label alignment="left" text="No Selec." id="X5K-jP-lgL"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="3um-QR-sZF"/>
+                        <label width="136" height="55" alignment="left" text="Label" numberOfLines="4" id="2an-yI-F1i"/>
+                        <separator alignment="left" id="dWf-kC-1bH"/>
+                        <button width="1" alignment="left" title="Confirmar" id="niz-dg-h9h">
+                            <connections>
+                                <segue destination="P0d-Ew-SyE" kind="push" id="ryS-A7-Q1F"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Volver a Empezar" id="IKn-ca-xoy">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="rl6-eD-MZb"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ingreJam" destination="pGb-Dg-hD8" id="Q55-JY-xym"/>
+                        <outlet property="ingreNuez" destination="Wwt-VH-4CX" id="94h-4c-k1r"/>
+                        <outlet property="ingrePavo" destination="pL9-3T-IpG" id="Omz-Dw-Jr8"/>
+                        <outlet property="ingrePep" destination="Uaa-iZ-G9u" id="4jj-ad-pKU"/>
+                        <outlet property="ingrePin" destination="6pN-fp-Pd2" id="T2P-Dw-Xw6"/>
+                        <outlet property="masa" destination="W8H-0O-Vpq" id="36z-5V-89x"/>
+                        <outlet property="queso" destination="R06-jP-ueG" id="lv5-Nj-vgx"/>
+                        <outlet property="rapp" destination="X5K-jP-lgL" id="5fy-TC-rs1"/>
+                        <outlet property="rest" destination="XPc-Pq-n5I" id="cbE-e9-XHd"/>
+                        <outlet property="siza" destination="2an-yI-F1i" id="h5x-SS-BIS"/>
+                        <outlet property="tamm" destination="GoI-I0-Uc9" id="SI0-Ik-uhG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="824" y="431.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,9 +427,16 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PizzaWatch_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rPq-k8-wey"/>
+        <segue reference="XTW-LD-xvN"/>
+        <segue reference="jTP-lf-ic0"/>
+        <segue reference="z1j-Eq-lww"/>
+        <segue reference="M5O-c9-Rvn"/>
+    </inferredMetricsTieBreakers>
 </document>

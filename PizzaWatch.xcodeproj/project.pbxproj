@@ -22,6 +22,15 @@
 		105E959A1E70DA5400EA0955 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E95991E70DA5400EA0955 /* ExtensionDelegate.swift */; };
 		105E959C1E70DA5400EA0955 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E959B1E70DA5400EA0955 /* NotificationController.swift */; };
 		105E959E1E70DA5400EA0955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105E959D1E70DA5400EA0955 /* Assets.xcassets */; };
+		10F2DB9C1E8DD7CF0042D642 /* VistaTamano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DB9B1E8DD7CF0042D642 /* VistaTamano.swift */; };
+		10F2DB9E1E8DD80E0042D642 /* VistaMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DB9D1E8DD80E0042D642 /* VistaMasa.swift */; };
+		10F2DBA01E8DD9B70042D642 /* VistaQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DB9F1E8DD9B70042D642 /* VistaQueso.swift */; };
+		10F2DBA21E8DD9CE0042D642 /* VistaIngre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DBA11E8DD9CE0042D642 /* VistaIngre.swift */; };
+		10F2DBA41E8DD9EE0042D642 /* VistaRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DBA31E8DD9EE0042D642 /* VistaRest.swift */; };
+		10F2DBA61E8DDA370042D642 /* VistaRapidez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DBA51E8DDA370042D642 /* VistaRapidez.swift */; };
+		10F2DBA81E8DDA560042D642 /* VistaConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DBA71E8DDA560042D642 /* VistaConf.swift */; };
+		10F2DBAA1E8DE8FA0042D642 /* Vista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DBA91E8DE8FA0042D642 /* Vista.swift */; };
+		10F2DBAC1E9459860042D642 /* VistaGracias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2DBAB1E9459860042D642 /* VistaGracias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +114,15 @@
 		105E959B1E70DA5400EA0955 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		105E959D1E70DA5400EA0955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105E959F1E70DA5400EA0955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F2DB9B1E8DD7CF0042D642 /* VistaTamano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaTamano.swift; sourceTree = "<group>"; };
+		10F2DB9D1E8DD80E0042D642 /* VistaMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaMasa.swift; sourceTree = "<group>"; };
+		10F2DB9F1E8DD9B70042D642 /* VistaQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaQueso.swift; sourceTree = "<group>"; };
+		10F2DBA11E8DD9CE0042D642 /* VistaIngre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaIngre.swift; sourceTree = "<group>"; };
+		10F2DBA31E8DD9EE0042D642 /* VistaRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaRest.swift; sourceTree = "<group>"; };
+		10F2DBA51E8DDA370042D642 /* VistaRapidez.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaRapidez.swift; sourceTree = "<group>"; };
+		10F2DBA71E8DDA560042D642 /* VistaConf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaConf.swift; sourceTree = "<group>"; };
+		10F2DBA91E8DE8FA0042D642 /* Vista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vista.swift; sourceTree = "<group>"; };
+		10F2DBAB1E9459860042D642 /* VistaGracias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaGracias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +218,15 @@
 				105E95861E70DA5400EA0955 /* Interface.storyboard */,
 				105E95891E70DA5400EA0955 /* Assets.xcassets */,
 				105E958B1E70DA5400EA0955 /* Info.plist */,
+				10F2DB9B1E8DD7CF0042D642 /* VistaTamano.swift */,
+				10F2DB9D1E8DD80E0042D642 /* VistaMasa.swift */,
+				10F2DB9F1E8DD9B70042D642 /* VistaQueso.swift */,
+				10F2DBA11E8DD9CE0042D642 /* VistaIngre.swift */,
+				10F2DBA31E8DD9EE0042D642 /* VistaRest.swift */,
+				10F2DBA51E8DDA370042D642 /* VistaRapidez.swift */,
+				10F2DBA71E8DDA560042D642 /* VistaConf.swift */,
+				10F2DBA91E8DE8FA0042D642 /* Vista.swift */,
+				10F2DBAB1E9459860042D642 /* VistaGracias.swift */,
 			);
 			path = "PizzaWatch WatchKit App";
 			sourceTree = "<group>";
@@ -428,7 +455,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				105E955F1E70DA5300EA0955 /* ViewController.swift in Sources */,
+				10F2DBA21E8DD9CE0042D642 /* VistaIngre.swift in Sources */,
+				10F2DBA01E8DD9B70042D642 /* VistaQueso.swift in Sources */,
+				10F2DBAA1E8DE8FA0042D642 /* Vista.swift in Sources */,
+				10F2DBA61E8DDA370042D642 /* VistaRapidez.swift in Sources */,
+				10F2DBA81E8DDA560042D642 /* VistaConf.swift in Sources */,
+				10F2DBA41E8DD9EE0042D642 /* VistaRest.swift in Sources */,
+				10F2DB9C1E8DD7CF0042D642 /* VistaTamano.swift in Sources */,
 				105E955D1E70DA5300EA0955 /* AppDelegate.swift in Sources */,
+				10F2DBAC1E9459860042D642 /* VistaGracias.swift in Sources */,
+				10F2DB9E1E8DD80E0042D642 /* VistaMasa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +811,7 @@
 				105E95A41E70DA5400EA0955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		105E95A61E70DA5400EA0955 /* Build configuration list for PBXNativeTarget "PizzaWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -783,6 +820,7 @@
 				105E95A81E70DA5400EA0955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		105E95AA1E70DA5400EA0955 /* Build configuration list for PBXNativeTarget "PizzaWatch" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +829,7 @@
 				105E95AC1E70DA5400EA0955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		105E95AD1E70DA5400EA0955 /* Build configuration list for PBXNativeTarget "PizzaWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -799,6 +838,7 @@
 				105E95AF1E70DA5400EA0955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		105E95B01E70DA5400EA0955 /* Build configuration list for PBXNativeTarget "PizzaWatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +847,7 @@
 				105E95B21E70DA5400EA0955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
